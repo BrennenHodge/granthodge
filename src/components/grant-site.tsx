@@ -72,10 +72,16 @@ export function GrantSite() {
           >
             10
           </div>
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-16 right-0 font-display text-[14rem] leading-none text-foreground/5 select-none sm:text-[18rem]"
+          >
+            10
+          </div>
           <div className="mx-auto grid max-w-6xl min-w-0 items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-16 lg:py-20">
             <div className="flex flex-col gap-6">
               <p className="text-sm font-medium tracking-[0.18em] text-muted uppercase">
-                {site.handle} · {site.age} years old
+                {site.handle}
               </p>
               <h1 className="font-display text-5xl leading-[0.92] tracking-tight sm:text-7xl">
                 Grant
@@ -83,8 +89,8 @@ export function GrantSite() {
                 Hodge
               </h1>
               <p className="max-w-md text-lg leading-relaxed text-muted">
-                Fifth grade at {site.school}. Baseball under the lights. Fortnite,
-                Rocket League, and Pokémon on the weekends. Videos as{" "}
+                Baseball under the lights. Fortnite, Rocket League, and Pokémon
+                on the weekends. Videos as{" "}
                 <a
                   href={site.youtubeUrl}
                   target="_blank"
@@ -129,8 +135,8 @@ export function GrantSite() {
         <section className="border-y border-border">
           <div className="mx-auto grid max-w-6xl grid-cols-2 gap-px bg-border sm:grid-cols-4">
             {[
-              { label: "Grade", value: "5th" },
-              { label: "Age", value: String(site.age) },
+              { label: "Sport", value: "Baseball" },
+              { label: "Games", value: "Fortnite" },
               { label: "Channel", value: `@${site.handle}` },
               { label: "Subscribers", value: site.subscribers },
             ].map((stat) => (
@@ -156,15 +162,13 @@ export function GrantSite() {
                 About
               </p>
               <h2 className="mt-3 font-display text-4xl tracking-tight sm:text-5xl">
-                A kid from Poplarville with a channel and a glove.
+                A channel, a glove, and a Donate Now button.
               </h2>
             </div>
             <div className="space-y-5 text-base leading-relaxed text-muted sm:text-lg">
               <p>
-                Grant Hodge is {site.age}. He is in {site.grade.toLowerCase()} at{" "}
-                {site.school} in Poplarville, Mississippi. He plays baseball,
-                records gaming videos, and still gets loud over a good Pokémon
-                pack.
+                Grant Hodge plays baseball, records gaming videos, and still
+                gets loud over a good Pokémon pack.
               </p>
               <p>
                 His YouTube channel is {site.handle} — Fortnite clips, pack
@@ -353,7 +357,7 @@ export function GrantSite() {
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <p className="font-display text-lg tracking-tight">{site.domain}</p>
           <p className="text-sm text-muted">
-            {site.name} · @{site.handle} · {site.grade}
+            {site.name} · @{site.handle}
           </p>
         </div>
       </footer>

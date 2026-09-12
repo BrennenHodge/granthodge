@@ -2,9 +2,6 @@ export const site = {
   name: "Grant Hodge",
   firstName: "Grant",
   handle: "Firecraft10",
-  age: 10,
-  grade: "Fifth grade",
-  school: "Poplarville Upper Elementary",
   domain: "granthodge.com",
   youtubeUrl: "https://www.youtube.com/@Firecraft10",
   youtubeChannelId: "UC_fsAkM4SCNpvnA6gdMENIQ",
@@ -92,7 +89,7 @@ export const interests: Interest[] = [
   {
     id: "baseball",
     name: "Baseball",
-    blurb: "Fifth grade. Dirt on the jersey. Night games under the lights.",
+    blurb: "Dirt on the jersey. Night games under the lights.",
     image: "/images/baseball.jpg",
     alt: "Night baseball diamond under the lights",
   },

@@ -14,7 +14,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Grant Hodge is 10. Fifth grade at Poplarville Upper Elementary, baseball player, and Firecraft10 on YouTube.",
+          "Grant Hodge — baseball, Fortnite, Pokémon, and Firecraft10 on YouTube.",
       },
       { name: "theme-color", content: "#0c1220" },
     ],
