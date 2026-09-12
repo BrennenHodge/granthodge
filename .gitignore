@@ -1,0 +1,15 @@
+node_modules
+.vercel
+.output
+dist
+screenshots
+artifacts
+*.log
+.env
+.env.local
+.grok/*
+!.grok/app-env.json
+AGENTS.md
+startup.sh
+.project_id
+.node_modules.lock
